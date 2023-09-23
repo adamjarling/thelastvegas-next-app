@@ -1,9 +1,10 @@
-const siteTitle = "Next.js TypeScript Tailwind Boilerplate";
-const ogImage = "/images/simone-secci-WNLzDp4elWs-unsplash.jpg";
+const siteTitle = "The Last Vegas - Hard glam boogie rock from Chicago USA";
+const ogImage = "/images/tlv-old-school-loft.jpg";
 
 const config = {
   OPEN_GRAPH: {
-    description: "Showcasing the ..",
+    description:
+      "The Last Vegas are a hard rock band from Chicago USA who have released 8 albums and toured the world with Motley Crue, AC/DC, Guns N Roses, Buckcherry, Papa Roach, Theory of a Deadman, and more.",
     images: [
       {
         url: `${
@@ -15,27 +16,44 @@ const config = {
     siteName: siteTitle,
     title: siteTitle,
     type: "website",
-    url: "https://adamarling.com",
+    url: "https://thelastvegas.com",
   },
   SITE: {
     description: "Description of the site",
-    name: "My Website",
+    name: "The Last Vegas",
     title: siteTitle,
   },
 };
 
-const nav = [
+export type NavItem = {
+  name: string;
+  href: string;
+};
+
+const nav: NavItem[] = [
+  // {
+  //   href: "/about",
+  //   name: "About",
+  // },
+  // {
+  //   href: "/masonry-gallery",
+  //   name: "Masonry Gallery",
+  // },
   {
-    href: "/about",
-    label: "About",
+    href: "/discography",
+    name: "Discography",
   },
   {
-    href: "/masonry-gallery",
-    label: "Masonry Gallery",
+    href: "/photos",
+    name: "Photos",
+  },
+  {
+    href: "/videos",
+    name: "Videos",
   },
   {
     href: "/shows",
-    label: "Shows",
+    name: "Shows",
   },
 ];
 

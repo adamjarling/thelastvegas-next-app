@@ -22,4 +22,12 @@ html {
   .section {
     @apply max-w-3xl py-8 mx-auto;
   }
+
+  a {
+    @apply duration-1000 ease-in-out hover:transition-all;
+  }
+
+  footer nav a {
+    @apply underline hover:no-underline;
+  }
 }

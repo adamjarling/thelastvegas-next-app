@@ -8,14 +8,12 @@ import { config } from "@/nttb-config";
 
 const Footer = () => {
   return (
-    <footer>
-      <FooterSimpleCentered
-        bandName={config.SITE.name}
-        className="bg-black border-t border-gray-800"
-        nav={footerNav}
-        socials={footerSocials}
-      />
-    </footer>
+    <FooterSimpleCentered
+      bandName={config.SITE.name}
+      className="tracking-wide uppercase border-t border-gray-800 bg-gray-950"
+      nav={footerNav}
+      socials={footerSocials}
+    />
   );
 };
 

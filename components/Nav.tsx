@@ -8,11 +8,15 @@ import { IoIosMenu } from "react-icons/io";
 import SocialMediaIcons from "./SocialMediaIcons";
 import { config } from "@/nttb-config";
 import { usePathname } from "next/navigation";
+import { Container } from "zuma-blocks";
+import tlvLogoInitialsWhite from "@/public/images/tlv-logo-white.png";
+import tlvLogo from "@/public/images/tlv-sweet-salvation-logo-white.png";
+import Image from "next/image";
 
 interface NavProps {
   links: {
     href: string;
-    label: string;
+    name: string;
   }[];
 }
 
@@ -20,15 +24,6 @@ const Nav: React.FC<NavProps> = ({ links }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const pathname = usePathname();
-
-  const textVariants = {
-    start: {
-      color: ["/", "/about"].includes(pathname || "") ? "white" : "black",
-    },
-    end: {
-      color: "white",
-    },
-  };
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -57,7 +52,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
 
   return (
     <div className="fixed top-0 z-20 w-full">
-      <div className="container">
+      <Container>
         <motion.div
           className="absolute inset-0 bg-black"
           initial={{ opacity: 0 }}
@@ -72,48 +67,41 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           {/* Desktop nav */}
           <div className={`flex items-center opacity-100 z-30`}>
             <motion.a
-              variants={textVariants}
-              animate={opacity > 0 ? "end" : "start"}
-              transition={{
-                duration: 0.5,
-              }}
               href="/"
-              className={`text-lg font-semibold uppercase ${
+              className={`text-lg font-semibold text-white uppercase ${
                 isMobileNavOpen && "hidden"
               }`}
             >
-              <span className="hidden lg:block">{config.SITE.name}</span>
-              <span className="lg:hidden">O.K.</span>
+              <span className="hidden lg:block">
+                <Image
+                  src={tlvLogo}
+                  alt="The Last Vegas logo"
+                  className="w-auto h-16"
+                />
+              </span>
+              <span className="lg:hidden">
+                <Image src={tlvLogo} alt="TLV logo" className="w-auto h-16" />
+              </span>
             </motion.a>
           </div>
           <div className={`hidden lg:flex uppercase opacity-100 z-30`}>
             {links.map((link) => (
               <motion.a
-                variants={textVariants}
-                animate={opacity > 0 ? "end" : "start"}
-                transition={{
-                  duration: 0.5,
-                }}
-                key={link.label}
+                key={link.name}
                 href={link.href}
                 className={`mx-4 text-sm`}
               >
-                {link.label}
+                {link.name}
               </motion.a>
             ))}
           </div>
           {/* Mobile menu button */}
           <div className={`lg:hidden flex items-center z-20`}>
             <motion.button
-              variants={textVariants}
-              animate={opacity > 0 ? "end" : "start"}
-              transition={{
-                duration: 0.5,
-              }}
               type="button"
               className={`focus:outline-none`}
               onClick={toggleMobileNav}
-              aria-label="Toggle mobile menu"
+              aria-name="Toggle mobile menu"
             >
               {isMobileNavOpen ? (
                 <FiX size={40} color="white" />
@@ -132,12 +120,12 @@ const Nav: React.FC<NavProps> = ({ links }) => {
               <div className="container mt-20">
                 {links.map((link) => (
                   <a
-                    key={link.label}
+                    key={link.name}
                     href={link.href}
                     className={`block text-3xl py-2 text-white hover:text-gray-200`}
                     onClick={toggleMobileNav}
                   >
-                    {link.label}
+                    {link.name}
                   </a>
                 ))}
                 <div className="mt-20">
@@ -147,7 +135,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
             </motion.div>
           )}
         </nav>
-      </div>
+      </Container>
     </div>
   );
 };

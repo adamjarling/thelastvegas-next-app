@@ -32,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={libreFranklin.className}>
       {/* Favicon */}
-      <link rel="icon" href="/favicon.png" type="image/png" />
+      <link rel="icon" href="/website-icon.png" type="image/png" />
 
-      <body>
-        <div className="flex flex-col justify-between h-screen ">
+      <body className="bg-gray-950 text-gray-50">
+        <div className="relative ">
           <Nav links={nav} />
           <div className="">{children}</div>
           <Footer />

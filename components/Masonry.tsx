@@ -49,8 +49,8 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
   };
 
   const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
+    default: 2,
+    640: 1,
   };
 
   const galleryImages = !manifest

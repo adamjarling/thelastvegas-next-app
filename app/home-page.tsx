@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { Container, ExternalLink } from "zuma-blocks";
 import Image from "next/image";
 import peacemakerImg from "@/public/images/peacemaker-tt.webp";
+import cityFlag from "@/public/images/Flag_of_Chicago,_Illinois-bw.png";
 
 export default function Home() {
   return (
@@ -21,7 +22,12 @@ export default function Home() {
           altText="Yo Mama"
         />
         <Banner>
-          <BannerHeadline>Hard Glam Boogie Rock</BannerHeadline>
+          <BannerHeadline>Sweet Salvation</BannerHeadline>
+          {/* <Image
+            src={cityFlag}
+            alt="Chicago Flag"
+            className="inline-block w-24 pt-20 m-auto"
+          /> */}
         </Banner>
         <div className="space-y-12 md:space-y-20">
           <h1 className="sr-only">The Last Vegas</h1>

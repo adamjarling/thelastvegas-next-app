@@ -1,6 +1,6 @@
-# nextjs-typescript-tailwind-boilerplate
+# The Last Vegas
 
-Baseline starter project files for a NextJS (server components) React application which uses TypeScript and TailwindCSS. Intended to be a helpful starting point.
+Website for Chicago rock band The Last Vegas.
 
 ## Includes
 

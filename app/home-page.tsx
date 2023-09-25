@@ -23,15 +23,9 @@ export default function Home() {
           // headline="Parallax Banner goes here"
           altText="Yo Mama"
         />
-        <Banner>
-          <BannerHeadline>Sweet Home Chicago</BannerHeadline>
-          {/* <Image
-            src={cityFlag}
-            alt="Chicago Flag"
-            className="inline-block w-24 pt-20 m-auto"
-          /> */}
-        </Banner>
-        <div className="space-y-12 md:space-y-20">
+
+        <div className="space-y-12 md:space-y-32">
+          <BannerHeadline className="mt-16">Sweet Home Chicago</BannerHeadline>
           <h1 className="sr-only">The Last Vegas</h1>
           <Container>
             <iframe
@@ -53,8 +47,8 @@ export default function Home() {
             </div>
           </Container>
 
-          <Container className="pb-20">
-            <div className="flex flex-col items-center space-y-10">
+          <Container className="">
+            <div className="flex flex-col items-center pb-20 space-y-10">
               <BannerHeadline>Albums</BannerHeadline>
               <p className="text-center">
                 Take a fresh look at some classic albums from The Last Vegas

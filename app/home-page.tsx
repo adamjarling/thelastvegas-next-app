@@ -11,6 +11,8 @@ import { Container, ExternalLink } from "zuma-blocks";
 import Image from "next/image";
 import peacemakerImg from "@/public/images/peacemaker-tt.webp";
 import cityFlag from "@/public/images/Flag_of_Chicago,_Illinois-bw.png";
+import { albums } from "@/data/albums";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
           altText="Yo Mama"
         />
         <Banner>
-          <BannerHeadline>Sweet Salvation</BannerHeadline>
+          <BannerHeadline>Sweet Home Chicago</BannerHeadline>
           {/* <Image
             src={cityFlag}
             alt="Chicago Flag"
@@ -51,10 +53,36 @@ export default function Home() {
             </div>
           </Container>
 
-          <Banner className="text-white bg-black">
-            <BannerHeadline>Albums</BannerHeadline>
-            <p>Take a fresh look at some classic albums from The Last Vegas</p>
-          </Banner>
+          <Container className="pb-20">
+            <div className="flex flex-col items-center space-y-10">
+              <BannerHeadline>Albums</BannerHeadline>
+              <p className="text-center">
+                Take a fresh look at some classic albums from The Last Vegas
+              </p>
+              <div className="grid grid-cols-1 gap-12 mb-20 md:grid-cols-3">
+                {albums
+                  .filter(
+                    (album) =>
+                      [
+                        "Bad Decisions",
+                        "Whatever Gets You Off",
+                        "Sweet Salvation",
+                      ].indexOf(album.name) > -1
+                  )
+                  .map((album) => (
+                    <div
+                      key={album.name}
+                      className="flex flex-col items-center space-y-4"
+                    >
+                      <Image src={album.nextImage} alt={album.name} />
+                    </div>
+                  ))}
+              </div>
+              <Link href="/discography" className="button">
+                View All
+              </Link>
+            </div>
+          </Container>
         </div>
       </Main>
     </>

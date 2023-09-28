@@ -73,7 +73,7 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
             key={image.filename}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
           >
             <Image
               src={image.filename}
@@ -81,7 +81,7 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
               height={image.height}
               onClick={() => handleImageClick(index)}
               alt={"alt"}
-              className="cursor-pointer"
+              className="bg-black cursor-pointer"
             />
           </motion.div>
         ))}

@@ -1,11 +1,11 @@
+import MasonryGallery, { MasonryImage } from "@/components/Masonry";
+
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Main from "@/components/Main";
-
-import MasonryGallery, { MasonryImage } from "@/components/Masonry";
-
 import { promises as fs } from "fs";
 import path from "path";
+import { shuffle } from "@/utils/shuffle";
 
 const sizeOf = require("image-size");
 
@@ -17,8 +17,9 @@ const PhotosPage = async () => {
   const imageFilenames = (await fs.readdir(imageDirectory)).filter(
     (f) => f !== ".DS_Store"
   );
+  const shuffledImageFilenames = shuffle(imageFilenames);
 
-  const images = imageFilenames.map((ifn): MasonryImage => {
+  const images = shuffledImageFilenames.map((ifn): MasonryImage => {
     const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
     return {
       filename: `/${folder}/${ifn}`,

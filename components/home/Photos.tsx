@@ -4,7 +4,6 @@ import React from "react";
 import bandWild from "@/public/photos/l_aec33430c8804c13a374080250300519.jpg";
 import bloodThirstyVid from "@/public/photos/IMG_6266-bw.jpg";
 import nateDrums from "@/public/photos/l_6c0ff513ec9abc0d2ae1673172642984.jpg";
-import ukCell from "@/public/photos/UKdressingcell.JPG";
 
 const images = [
   {
@@ -13,7 +12,6 @@ const images = [
   },
   { src: bloodThirstyVid, alt: "Bloodthirsty video shoot" },
   { src: bandWild, alt: "The Last Vegas" },
-  { src: ukCell, alt: "The Last Vegas UK" },
 ];
 
 const HomePhotos = () => {

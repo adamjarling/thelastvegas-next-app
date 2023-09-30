@@ -52,8 +52,8 @@ const nav: NavItem[] = [
     name: "Videos",
   },
   {
-    href: "/shows",
-    name: "Shows",
+    href: "/live",
+    name: "Live",
   },
 ];
 

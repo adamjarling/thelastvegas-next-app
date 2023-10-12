@@ -2,17 +2,13 @@
 
 import { Container, ExternalLink } from "zuma-blocks";
 
-import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
-import Button from "@/components/Button";
-import HeroImage from "@/components/Hero";
 import HomePhotos from "@/components/home/Photos";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import ParallaxHero from "@/components/ParallaxHero";
 import { albums } from "@/data/albums";
-import cityFlag from "@/public/images/Flag_of_Chicago,_Illinois-bw.png";
 import { motion } from "framer-motion";
 import peacemakerImg from "@/public/images/peacemaker-tt.webp";
 
@@ -32,7 +28,7 @@ export default function Home() {
           <Container>
             <div className="flex flex-col items-center mb-8">
               <p>As seen on </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center max-w-[600px]">
                 <ExternalLink
                   href={`https://www.hbomax.com/series/urn:hbo:series:GYb0FKQLsGIyPfQEAAAAM`}
                 >
@@ -63,14 +59,14 @@ export default function Home() {
                         "Bad Decisions",
                         "Whatever Gets You Off",
                         "Sweet Salvation",
-                      ].indexOf(album.name) > -1
+                      ].indexOf(album.title) > -1
                   )
                   .map((album) => (
                     <div
-                      key={album.name}
+                      key={album.title}
                       className="flex flex-col items-center space-y-4"
                     >
-                      <Image src={album.nextImage} alt={album.name} />
+                      <Image src={album.nextImage} alt={album.title} />
                     </div>
                   ))}
               </div>

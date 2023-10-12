@@ -1,5 +1,6 @@
 const siteTitle = "The Last Vegas - Hard glam boogie rock from Chicago USA";
 const ogImage = "/images/tlv-old-school-loft.jpg";
+const url = "https://thelastvegas.com";
 
 const config = {
   OPEN_GRAPH: {
@@ -16,12 +17,13 @@ const config = {
     siteName: siteTitle,
     title: siteTitle,
     type: "website",
-    url: "https://thelastvegas.com",
+    url,
   },
   SITE: {
     description: "Description of the site",
     name: "The Last Vegas",
     title: siteTitle,
+    url,
   },
 };
 

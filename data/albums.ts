@@ -146,7 +146,7 @@ export const albums: Album[] = [
     producer: "The Last Vegas",
     recordLabel: {
       url: "", // Provide a valid URL
-      title: "",
+      title: "The Last Vegas",
     },
     title: "High Class Trash",
     year: "2007",

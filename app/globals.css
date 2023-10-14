@@ -12,15 +12,15 @@ html {
   h3,
   h4,
   h5 {
-    @apply font-medium uppercase;
+    @apply font-bold uppercase font-headline;
   }
 
   .banner-headline {
-    @apply font-semibold text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3;
+    @apply font-medium text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3 font-headline uppercase;
   }
 
   .button {
-    @apply inline-block px-8 py-5 text-lg font-semibold text-center uppercase transition-opacity duration-500 ease-in-out border opacity-90 hover:opacity-100;
+    @apply inline-block px-8 py-5 text-lg font-medium tracking-widest text-center uppercase transition-opacity duration-500 ease-in-out border opacity-90 hover:opacity-100 font-headline;
   }
 
   .section {

@@ -16,7 +16,12 @@ module.exports = {
       center: true,
       padding: "2rem",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        bodytext: ["var(--font-bodytext)"],
+        headline: ["var(--font-headline)"],
+      },
+    },
   },
   plugins: [],
 };

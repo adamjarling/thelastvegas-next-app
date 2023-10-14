@@ -43,7 +43,7 @@ const Album: React.FC<Props> = ({ album }) => {
           button.url ? (
             <a
               key={button.name}
-              className="px-3 py-1 border border-x-gray-200"
+              className="px-3 py-1 border border-gray-200 hover:border-gray-400 hover:text-gray-400"
               href={button.url}
             >
               {button.name}

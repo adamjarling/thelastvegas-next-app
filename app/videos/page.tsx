@@ -14,6 +14,20 @@ const videos = [
     thumbnail: "",
   },
   {
+    title: "The Last Vegas - Bloodthirsty",
+    youTubeId: "E0jojclPoR4",
+    description:
+      "Music video for The Last Vegas' song 'Bloodthirsty', the only video released from the album 'Eat Me' on AFM Records",
+    thumbnail: "",
+  },
+  {
+    title: "The Last Vegas - You and Me",
+    youTubeId: "IgLp272cuJg",
+    description:
+      "Music video for The Last Vegas' song 'You and Me' from the album 'Sweet Salvation'",
+    thumbnail: "",
+  },
+  {
     title: "The Last Vegas - Apologize",
     youTubeId: "TdIMwhFhyIg",
     description:
@@ -28,10 +42,23 @@ const videos = [
     thumbnail: "",
   },
   {
+    title: "The Last Vegas - Whatever Gets You Off",
+    youTubeId: "hozZAxOuG_Q",
+    description:
+      "Music video for The Last Vegas' song 'Whatever Gets You Off' from the album 'Whatever Gets You Off'",
+    thumbnail: "",
+  },
+  {
     title: "The Last Vegas - Come With Me",
     youTubeId: "skYsMgl8Qno",
     description:
       "Music video for The Last Vegas' song 'Come With Me' from the album 'Sweet Salvation'",
+    thumbnail: "",
+  },
+  {
+    title: "The Last Vegas - AC/DC!",
+    youTubeId: "OBYhxTwr0zI",
+    description: "Behind the Scenes The Last Vegas performing with AC/DC!",
     thumbnail: "",
   },
   {

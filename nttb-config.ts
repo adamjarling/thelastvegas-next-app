@@ -61,24 +61,24 @@ const nav: NavItem[] = [
 
 const socialMedia = {
   instagram: {
-    handle: "",
-    url: "",
+    handle: "thelastvegas",
+    url: "https://www.instagram.com/thelastvegas/",
   },
   facebook: {
-    handle: "",
-    url: "",
+    handle: "thelastvegas",
+    url: "https://www.facebook.com/thelastvegas/",
   },
   twitter: {
-    handle: "",
-    url: "",
+    handle: "THELASTVEGAS",
+    url: "https://twitter.com/THELASTVEGAS",
   },
   spotify: {
     handle: "",
-    url: "",
+    url: "https://open.spotify.com/artist/7fXDfYeQzpPak5bAizQApC?si=QOIFpQftSmmPMpQy-HHLyw",
   },
   youTube: {
-    handle: "",
-    url: "",
+    handle: "@thelastvegasvideos",
+    url: "https://www.youtube.com/@thelastvegasvideos",
   },
 };
 

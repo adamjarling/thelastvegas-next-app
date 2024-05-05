@@ -8,9 +8,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import ParallaxHero from "@/components/ParallaxHero";
+import SummerfestPromo from "@/components/live/SummerfestPromo";
 import { albums } from "@/data/albums";
 import { motion } from "framer-motion";
 import peacemakerImg from "@/public/images/peacemaker-tt.webp";
+import summerFest from "public/images/tlv_summerfest_2024.jpeg";
 
 export default function Home() {
   return (
@@ -18,13 +20,15 @@ export default function Home() {
       <Main flushTop>
         <ParallaxHero
           imageUrl="/images/tlv-old-school-loft.jpg"
-          // headline="Parallax Banner goes here"
-          altText="Yo Mama"
+          headline="Summerfest 2024 just announced"
+          altText="The Last Vegas in Chicago at the Loft - photo by Gene Ambo"
         />
 
         <div className="space-y-12 md:space-y-32">
           {/* <BannerHeadline className="mt-16">Sweet Home Chicago</BannerHeadline> */}
+
           <h1 className="sr-only">The Last Vegas</h1>
+          <SummerfestPromo />
           <Container>
             <div className="space-y-6">
               <div className="flex flex-col items-center mb-8">
@@ -36,6 +40,7 @@ export default function Home() {
                     <Image src={peacemakerImg} alt="Peacemaker TV show" />
                   </ExternalLink>
                 </div>
+                d
               </div>
               <iframe
                 className="w-full aspect-video"

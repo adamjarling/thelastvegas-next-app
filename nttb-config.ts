@@ -33,14 +33,6 @@ export type NavItem = {
 };
 
 const nav: NavItem[] = [
-  // {
-  //   href: "/about",
-  //   name: "About",
-  // },
-  // {
-  //   href: "/masonry-gallery",
-  //   name: "Masonry Gallery",
-  // },
   {
     href: "/discography",
     name: "Discography",
@@ -56,6 +48,10 @@ const nav: NavItem[] = [
   {
     href: "/live",
     name: "Live",
+  },
+  {
+    href: "/about",
+    name: "About",
   },
 ];
 

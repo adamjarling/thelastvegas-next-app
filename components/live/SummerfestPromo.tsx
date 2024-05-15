@@ -32,7 +32,7 @@ const SummerfestPromo = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Buy Tickets
+        Get Tickets
       </a>
     </motion.div>
   );

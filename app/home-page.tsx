@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Main flushTop>
         <ParallaxHero
-          imageUrl="/images/tlv-old-school-loft.jpg"
+          imageUrl="/photos/Copy of TLV2016hillscolor.jpg"
           headline="Summerfest 2024 just announced"
           altText="The Last Vegas in Chicago at the Loft - photo by Gene Ambo"
         />

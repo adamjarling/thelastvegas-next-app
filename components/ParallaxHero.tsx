@@ -36,7 +36,9 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
         <div className="lg:max-w-md">
           {headline && (
             <h1 className="inline-block mb-4 text-4xl leading-none text-white md:text-6xl">
-              {headline}
+              <span style={{ textShadow: "1px 1px 10px #666" }}>
+                {headline}
+              </span>
             </h1>
           )}
 

@@ -3,6 +3,7 @@
 import { Container, ExternalLink } from "zuma-blocks";
 
 import BannerHeadline from "@/components/banner/Headline";
+import HeroHome from "@/components/HeroHome";
 import HomePhotos from "@/components/home/Photos";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,17 +19,29 @@ export default function Home() {
   return (
     <>
       <Main flushTop>
-        <ParallaxHero
-          imageUrl="/photos/Copy of TLV2016hillscolor.jpg"
+        <HeroHome
+          imageUrl="/photos/TLV2016hillscolor.jpg"
           headline="Summerfest 2024 just announced"
           altText="The Last Vegas in Chicago at the Loft - photo by Gene Ambo"
         />
+        <SummerfestPromo />
 
-        <div className="space-y-12 md:space-y-32">
+        {/* <div className="text-center">
+          <a
+            href="https://www.summerfest.com/ticket-info/"
+            className="mt-5 button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Tickets
+          </a>
+        </div> */}
+
+        <div className="space-y-12 md:space-y-24">
           {/* <BannerHeadline className="mt-16">Sweet Home Chicago</BannerHeadline> */}
 
           <h1 className="sr-only">The Last Vegas</h1>
-          <SummerfestPromo />
+
           <Container>
             <div className="space-y-6">
               <div className="flex flex-col items-center mb-8">

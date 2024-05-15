@@ -19,13 +19,14 @@ const SummerfestPromo = () => {
           delay: 0.5,
         },
       }}
-      className="flex flex-col items-center mt-10"
+      className="flex flex-col items-center"
     >
       <Image
         src={summerFest}
         alt="TLV Summerfest 2024"
         className="object-cover max-w-full lg:max-w-3xl"
       />
+
       <a
         href="https://www.summerfest.com/ticket-info/"
         className="mt-5 button"

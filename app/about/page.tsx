@@ -1,9 +1,6 @@
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
-import Image from "next/image";
 import Main from "@/components/Main";
-import ParallaxVideo from "@/components/ParallaxVideo";
-import casey from "@/public/images/IMG_0221.jpg";
 
 const About = () => {
   return (
@@ -25,11 +22,10 @@ const About = () => {
           Formed in the early 2000s, The Last Vegas quickly gained recognition
           for their relentless live performances, earning them a dedicated
           following in the underground rock scene. Comprising members Chad
-          Cherry (vocals), Adam Arling (guitar){" "}
-          <span className="text-sm text-gray-400">[adam@adamarling.com]</span>,
-          Bryan Wilkinson (guitar), Danny Smash (bass), and Nate Arling (drums),
-          the band delivers a high-octane blend of gritty riffs, anthemic
-          choruses, and infectious hooks.
+          Cherry (vocals), Adam Arling (guitar), John Wator (guitar), Bryan
+          Wilkinson (guitar), Danny Smash (bass), and Nate Arling (drums), the
+          band delivers a high-octane blend of gritty riffs, anthemic choruses,
+          and pop hooks.
         </p>
 
         <p>
@@ -51,20 +47,18 @@ const About = () => {
 
         <p>
           Beyond their studio recordings, The Last Vegas is renowned for their
-          electrifying live shows, where they unleash a sonic assault that
-          leaves audiences exhilarated and craving more. Whether they're
-          headlining festivals or tearing through intimate club gigs, the band's
-          passion and intensity are palpable, creating an unforgettable
-          experience for fans old and new.
+          electrifying live shows, known to unleash sonic guitar assaults and
+          bombastic drum solos, delivered with a blues-infused swagger from
+          front-man Chad Cherry.
         </p>
 
         <p>
-          As they continue to rock stages around the globe, The Last Vegas
-          remains a driving force in the rock scene, proving that the spirit of
-          rock 'n' roll is alive and well in the 21st century. With their
-          unbridled energy, undeniable talent, and unwavering dedication to
-          their craft, The Last Vegas stands as a testament to the enduring
-          power of rock music.
+          As they continue to headline festivals or tear through intimate club
+          gigs around the globe, The Last Vegas remains a driving force in the
+          rock scene, proving that the spirit of rock 'n' roll is alive and well
+          in the 21st century. With an unbridled energy, undeniable talent, and
+          unwavering dedication to their craft, The Last Vegas stands as a
+          testament to the enduring power of rock music.
         </p>
       </div>
     </Main>

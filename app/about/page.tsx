@@ -25,9 +25,11 @@ const About = () => {
           Formed in the early 2000s, The Last Vegas quickly gained recognition
           for their relentless live performances, earning them a dedicated
           following in the underground rock scene. Comprising members Chad
-          Cherry (vocals), Adam Arling (guitar), Bryan Wilkinson (guitar), Danny
-          Smash (bass), and Nate Arling (drums), the band delivers a high-octane
-          blend of gritty riffs, anthemic choruses, and infectious hooks.
+          Cherry (vocals), Adam Arling (guitar){" "}
+          <span className="text-sm text-gray-400">[adam@adamarling.com]</span>,
+          Bryan Wilkinson (guitar), Danny Smash (bass), and Nate Arling (drums),
+          the band delivers a high-octane blend of gritty riffs, anthemic
+          choruses, and infectious hooks.
         </p>
 
         <p>

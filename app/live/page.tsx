@@ -15,17 +15,15 @@ const ShowsPage = () => {
       <Banner className="md:py-20">
         <BannerHeadline>Live</BannerHeadline>
       </Banner>
-      <SummerfestPromo />
 
-      <section className="mt-24 text-center">
+      <section className="mb-24 text-center">
         <h2 className="mb-10 text-6xl uppercase">Booking</h2>
         <p className="mb-5 text-center">
           Booking: <Obfuscate />
         </p>
-        <div className="flex justify-center mb-20">
-          <Image src={tkoLogo} alt="TKO logo" />
-        </div>
       </section>
+
+      <SummerfestPromo />
     </Main>
   );
 };

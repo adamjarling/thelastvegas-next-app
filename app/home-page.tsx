@@ -21,21 +21,9 @@ export default function Home() {
       <Main flushTop>
         <HeroHome
           imageUrl="/photos/TLV2016hillscolor.jpg"
-          headline="Summerfest 2024 just announced"
+          headline="The Last Vegas...Rockin' hard since 2004"
           altText="The Last Vegas in Chicago at the Loft - photo by Gene Ambo"
         />
-        <SummerfestPromo />
-
-        {/* <div className="text-center">
-          <a
-            href="https://www.summerfest.com/ticket-info/"
-            className="mt-5 button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Tickets
-          </a>
-        </div> */}
 
         <div className="space-y-12 md:space-y-24">
           {/* <BannerHeadline className="mt-16">Sweet Home Chicago</BannerHeadline> */}

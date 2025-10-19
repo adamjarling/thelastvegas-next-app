@@ -6,9 +6,9 @@ import ReactObfuscate from "react-obfuscate";
 const Obfuscate = () => {
   return (
     <ReactObfuscate
-      email="natearling@tko.com"
+      email="info@thelastvegas.com"
       headers={{
-        subject: "TLV booking",
+        subject: "TLV booking / info",
       }}
     />
   );

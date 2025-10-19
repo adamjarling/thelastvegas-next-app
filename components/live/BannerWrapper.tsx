@@ -7,7 +7,7 @@ const BannerWrapper = () => {
   return (
     <ParallaxHero
       imageUrl="/photos/l_6c0ff513ec9abc0d2ae1673172642984.jpg"
-      headline="Summerfest 2024 just announced"
+      headline="Hello 2025/2026...ready to rock?"
       altText="The Last Vegas live at the Rockford Speedway"
     />
   );

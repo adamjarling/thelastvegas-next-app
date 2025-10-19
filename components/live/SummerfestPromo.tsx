@@ -26,15 +26,6 @@ const SummerfestPromo = () => {
         alt="TLV Summerfest 2024"
         className="object-cover max-w-full lg:max-w-3xl"
       />
-
-      <a
-        href="https://www.summerfest.com/ticket-info/"
-        className="mt-5 button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Get Tickets
-      </a>
     </motion.div>
   );
 };

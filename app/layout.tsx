@@ -3,7 +3,7 @@ import "./globals.css";
 import { config, nav } from "nttb-config";
 
 import Footer from "@/components/Footer";
-import { Paytone_One, Open_Sans, Oswald, Rubik_Dirt } from "next/font/google";
+import { Open_Sans, Oswald } from "next/font/google";
 import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Script from "next/script";
@@ -36,14 +36,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${headline.variable} ${bodytext.variable}`}>
-      {/* Favicon */}
+    <html
+      lang="en"
+      className={`${headline.variable} ${bodytext.variable} scroll-smooth`}
+    >
       <link rel="icon" href="/website-icon.png" type="image/png" />
 
-      <body className={`bg-gray-950 text-gray-50 font-bodytext`}>
-        <div className="relative ">
+      <body className="bg-gray-950 text-gray-50" style={{ fontFamily: "var(--font-bodytext)" }}>
+        <div className="relative">
           <Nav links={nav} />
-          <div className="">{children}</div>
+          {children}
           <Footer />
         </div>
 

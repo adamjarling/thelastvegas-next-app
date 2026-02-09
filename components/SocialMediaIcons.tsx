@@ -2,7 +2,7 @@ import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 
 import Link from "next/link";
 import React from "react";
-import { socialMedia } from "nttb-config";
+import { socialMedia } from "@/nttb-config";
 
 const socialIcons = [
   {

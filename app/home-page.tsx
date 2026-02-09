@@ -1,19 +1,14 @@
 "use client";
 
-import { Container, ExternalLink } from "zuma-blocks";
-
 import BannerHeadline from "@/components/banner/Headline";
+import Container from "@/components/Container";
 import HeroHome from "@/components/HeroHome";
 import HomePhotos from "@/components/home/Photos";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
-import ParallaxHero from "@/components/ParallaxHero";
-import SummerfestPromo from "@/components/live/SummerfestPromo";
 import { albums } from "@/data/albums";
-import { motion } from "framer-motion";
 import peacemakerImg from "@/public/images/peacemaker-tt.webp";
-import summerFest from "public/images/tlv_summerfest_2024.jpeg";
 
 export default function Home() {
   return (
@@ -26,8 +21,6 @@ export default function Home() {
         />
 
         <div className="space-y-12 md:space-y-24">
-          {/* <BannerHeadline className="mt-16">Sweet Home Chicago</BannerHeadline> */}
-
           <h1 className="sr-only">The Last Vegas</h1>
 
           <Container>
@@ -35,13 +28,14 @@ export default function Home() {
               <div className="flex flex-col items-center mb-8">
                 <p>As seen on </p>
                 <div className="flex justify-center max-w-[600px]">
-                  <ExternalLink
-                    href={`https://www.hbomax.com/series/urn:hbo:series:GYb0FKQLsGIyPfQEAAAAM`}
+                  <a
+                    href="https://www.hbomax.com/series/urn:hbo:series:GYb0FKQLsGIyPfQEAAAAM"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Image src={peacemakerImg} alt="Peacemaker TV show" />
-                  </ExternalLink>
+                  </a>
                 </div>
-                d
               </div>
               <iframe
                 className="w-full aspect-video"
@@ -49,6 +43,7 @@ export default function Home() {
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
               ></iframe>
               <iframe
                 className="w-full aspect-video"
@@ -56,11 +51,12 @@ export default function Home() {
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
               ></iframe>
             </div>
           </Container>
 
-          <Container className="">
+          <Container>
             <div className="flex flex-col items-center pb-20 space-y-10">
               <BannerHeadline>Albums</BannerHeadline>
               <p className="text-center">

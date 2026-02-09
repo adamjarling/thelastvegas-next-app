@@ -1,9 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html {
-  /* font-size: 21px; */
+@theme {
+  --font-headline: var(--font-headline);
+  --font-bodytext: var(--font-bodytext);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 @layer base {
@@ -12,19 +16,8 @@ html {
   h3,
   h4,
   h5 {
-    @apply font-bold uppercase font-headline;
-  }
-
-  .banner-headline {
-    @apply font-medium text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3 font-headline uppercase;
-  }
-
-  .button {
-    @apply inline-block px-8 py-5 text-lg font-medium tracking-widest text-center uppercase transition-opacity duration-500 ease-in-out border opacity-90 hover:opacity-100 font-headline;
-  }
-
-  .section {
-    @apply max-w-3xl py-8 mx-auto;
+    @apply font-bold uppercase;
+    font-family: var(--font-headline);
   }
 
   a {
@@ -34,4 +27,18 @@ html {
   footer nav a {
     @apply underline hover:no-underline;
   }
+}
+
+@utility banner-headline {
+  @apply font-medium text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3 uppercase;
+  font-family: var(--font-headline);
+}
+
+@utility button {
+  @apply inline-block px-8 py-5 text-lg font-medium tracking-widest text-center uppercase transition-opacity duration-500 ease-in-out border opacity-90 hover:opacity-100;
+  font-family: var(--font-headline);
+}
+
+@utility section {
+  @apply max-w-3xl py-8 mx-auto;
 }

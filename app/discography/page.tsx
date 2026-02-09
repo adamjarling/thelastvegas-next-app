@@ -3,8 +3,7 @@
 import Album from "@/components/Album";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
-import { Container } from "zuma-blocks";
-import Image from "next/image";
+import Container from "@/components/Container";
 import Main from "@/components/Main";
 import { albums } from "@/data/albums";
 

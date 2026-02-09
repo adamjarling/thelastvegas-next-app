@@ -80,7 +80,7 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
               width={image.width}
               height={image.height}
               onClick={() => handleImageClick(index)}
-              alt={"alt"}
+              alt={`The Last Vegas - photo ${index + 1}`}
               className="bg-black cursor-pointer"
             />
           </motion.div>

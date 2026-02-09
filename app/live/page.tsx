@@ -1,12 +1,9 @@
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerWrapper from "@/components/live/BannerWrapper";
-import Image from "next/image";
 import Main from "@/components/Main";
 import Obfuscate from "@/components/Obfuscate";
 import SummerfestPromo from "@/components/live/SummerfestPromo";
-import summerFest from "public/images/tlv_summerfest_2024.jpeg";
-import tkoLogo from "public/images/TKO-logo.png";
 
 const ShowsPage = () => {
   return (

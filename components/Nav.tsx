@@ -1,17 +1,13 @@
 "use client";
 
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
 import { IoIosMenu } from "react-icons/io";
 import SocialMediaIcons from "./SocialMediaIcons";
-import { config } from "@/nttb-config";
-import { usePathname } from "next/navigation";
-import { Container } from "zuma-blocks";
-import tlvLogoInitialsWhite from "@/public/images/tlv-logo-white.png";
-import tlvLogo from "@/public/images/tlv-sweet-salvation-logo-white.png";
 import Image from "next/image";
+import tlvLogo from "@/public/images/tlv-sweet-salvation-logo-white.png";
 
 interface NavProps {
   links: {
@@ -23,7 +19,6 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ links }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const { scrollYProgress } = useScroll();
-  const pathname = usePathname();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -52,7 +47,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
 
   return (
     <div className="fixed top-0 z-20 w-full">
-      <Container>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="absolute inset-0 bg-black"
           initial={{ opacity: 0 }}
@@ -101,7 +96,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
               type="button"
               className={`focus:outline-none`}
               onClick={toggleMobileNav}
-              aria-name="Toggle mobile menu"
+              aria-label="Toggle mobile menu"
             >
               {isMobileNavOpen ? (
                 <FiX size={40} color="white" />
@@ -135,7 +130,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
             </motion.div>
           )}
         </nav>
-      </Container>
+      </div>
     </div>
   );
 };

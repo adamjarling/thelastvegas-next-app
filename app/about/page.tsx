@@ -29,16 +29,16 @@ const About = () => {
         </p>
 
         <p>
-          Their breakthrough came with the release of their debut album, "Seal
-          the Deal," in 2006, which showcased their signature blend of punk and
-          swagger. The album's success propelled them onto larger stages,
+          Their breakthrough came with the release of their debut album, &ldquo;Seal
+          the Deal,&rdquo; in 2006, which showcased their signature blend of punk and
+          swagger. The album&apos;s success propelled them onto larger stages,
           leading to tours alongside rock legends such as AC/DC, Motley Crue,
-          and Guns N' Roses.
+          and Guns N&apos; Roses.
         </p>
 
         <p>
-          With each subsequent release, including albums like "Whatever Gets You
-          Off" and "Bad Decisions," The Last Vegas continued to refine their
+          With each subsequent release, including albums like &ldquo;Whatever Gets You
+          Off&rdquo; and &ldquo;Bad Decisions,&rdquo; The Last Vegas continued to refine their
           sound, earning critical acclaim and expanding their fanbase worldwide.
           Their music resonates with audiences craving the raw energy and
           rebellious spirit of classic rock, while also drawing in new listeners
@@ -55,7 +55,7 @@ const About = () => {
         <p>
           As they continue to headline festivals or tear through intimate club
           gigs around the globe, The Last Vegas remains a driving force in the
-          rock scene, proving that the spirit of rock 'n' roll is alive and well
+          rock scene, proving that the spirit of rock &apos;n&apos; roll is alive and well
           in the 21st century. With an unbridled energy, undeniable talent, and
           unwavering dedication to their craft, The Last Vegas stands as a
           testament to the enduring power of rock music.
